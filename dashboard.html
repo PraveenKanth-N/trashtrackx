@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRASH-TRACKX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background: #106b42;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .main-container {
+            display: flex;
+            width: 100%;
+            margin-top: 80px;
+        }
+        .image-column {
+            width: 25%;
+            padding: 20px;
+        }
+        .image-column img {
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-column img:hover {
+            transform: scale(1.05);
+        }
+        .content {
+            width: 75%;
+            text-align: center;
+            padding: 20px;
+        }
+        .login-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .option {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 150px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            color: #000;
+        }
+        .student { border-top: 5px solid blue; }
+        .employee { border-top: 5px solid gold; }
+        .parent { border-top: 5px solid green; }
+        .alumni { border-top: 5px solid skyblue; }
+        
+        .option:hover {
+            transform: scale(1.1);
+        }
+        .spotlight {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .spotlight ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .spotlight ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .spotlight ul li a {
+            text-decoration: none;
+            color: #106b42;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .spotlight ul li a:hover {
+            color: #0b4e30;
+        }
+        .footer {
+            background-color: #106b42;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TRASH-TRACKX</h1>
+    </header>
+    <div class="main-container">
+        <div class="image-column">
+            <img src="C:\Users\Nivethanehru\OneDrive\Pictures\Saved Pictures\swm img3.png" alt="Smart Waste Management">
+            <img src="C:\Users\Nivethanehru\OneDrive\Pictures\Saved Pictures\swm img2.png" alt="Recycling Process">
+            <img src="C:\Users\Nivethanehru\OneDrive\Pictures\Saved Pictures\swm img1.jpg" alt="Sustainable Waste Solutions">
+        </div>
+        <div class="content">
+            <p>"Revolutionizing waste management with smart, data-driven solutions for efficient collection, recycling, and sustainability."</p>
+            <div class="login-options">
+                <a href="employee.html" class="option employee">Employee</a>
+                <a href="admin.html" class="option parent">Admin</a>
+                <a href="citizen.html" class="option alumni">Citizen</a>
+            </div>
+            <section class="spotlight">
+                <h3>Spotlight</h3>
+                <ul>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S0956053X23005573">ARTICLE ON SMART WASTE MANAGEMENT</a></li>
+                    <li><a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2085711#:~:text=Solid%20Waste%20Management%3A%20Over%2066,improve%20solid%20waste%20management%20efficiency.">SMART CITIES MISSION ACHIEVEMENTS</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        &copy; 2025 TRASH-TRACKX. All rights reserved.
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            let footer = document.getElementById('footer');
+            if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
